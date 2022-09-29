@@ -1,4 +1,4 @@
-package ingredients;
+package ingredients.interfaces;
 
 public interface Ingredient {
 

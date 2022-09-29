@@ -1,2 +1,7 @@
-package ingredients;public class Milk {
+package ingredients;
+
+import ingredients.abstract_classes.AbstractIngredient;
+
+public class Milk extends AbstractIngredient {
+
 }

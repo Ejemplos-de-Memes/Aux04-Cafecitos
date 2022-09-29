@@ -1,2 +1,5 @@
-package drinks;public class Glass {
+package drinks;
+
+public class Glass {
+
 }

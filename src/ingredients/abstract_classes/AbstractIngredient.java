@@ -1,5 +1,7 @@
-package ingredients;
+package ingredients.abstract_classes;
 
-public abstract class AbstractIngredient implements Ingredient{
+import ingredients.interfaces.Ingredient;
+
+public abstract class AbstractIngredient implements Ingredient {
 
 }
