@@ -27,4 +27,14 @@ public class Glass {
   public void setIngredients(List<Ingredient> ingredients) {
     this.ingredients = ingredients;
   }
+
+  /** Retorna la cantidad de contenido en el vaso total en mililitros. */
+  public Integer totalContent() {
+    return 0;
+  }
+
+  /** Vacia el contenido del vaso. */
+  public void emptyContent() {
+    // Hacer algo uwu
+  }
 }
