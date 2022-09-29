@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="tests: Crear tests para toString, equals y hashCode">
-      <change beforePath="$PROJECT_DIR$/src/drinks/Glass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drinks/Glass.java" afterDir="false" />
+    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="tests: hacer TDD sobre clase Barista">
+      <change afterPath="$PROJECT_DIR$/lib/annotations-20.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aux04-Cafecitos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aux04-Cafecitos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ingredients/abstract_classes/AbstractIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/abstract_classes/AbstractIngredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ingredients/interfaces/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/interfaces/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/people/Barista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/people/Barista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/people/BaristaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/people/BaristaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,16 +25,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="00-init" />
+        <entry key="$PROJECT_DIR$" value="01-tests-constructor-equals-hash" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +62,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "people.PersonTest",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -66,10 +72,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
-      <recent name="people.PersonTest" />
       <recent name="" />
+      <recent name="people.PersonTest" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="drinks" />
       <recent name="people" />
     </key>
   </component>
@@ -82,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaristaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaristaTest.makeCoffee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aux04-Cafecitos" />
       <extension name="coverage">
         <pattern>
@@ -92,43 +99,45 @@
       </extension>
       <option name="PACKAGE_NAME" value="people" />
       <option name="MAIN_CLASS_NAME" value="people.BaristaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaristaTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Aux04-Cafecitos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="people.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="people" />
-      <option name="MAIN_CLASS_NAME" value="people.BaristaTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="METHOD_NAME" value="makeCoffee" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GlassTest.emptyContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aux04-Cafecitos" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="people.*" />
+          <option name="PATTERN" value="drinks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="people" />
-      <option name="MAIN_CLASS_NAME" value="people.PersonTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="drinks" />
+      <option name="MAIN_CLASS_NAME" value="drinks.GlassTest" />
+      <option name="METHOD_NAME" value="emptyContent" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GlassTest.totalContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aux04-Cafecitos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="drinks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="drinks" />
+      <option name="MAIN_CLASS_NAME" value="drinks.GlassTest" />
+      <option name="METHOD_NAME" value="totalContent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.drink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aux04-Cafecitos" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +147,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="people" />
       <option name="MAIN_CLASS_NAME" value="people.PersonTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="METHOD_NAME" value="drink" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Aux04-Cafecitos" />
-        <item itemvalue="JUnit.PersonTest.testEquals" />
-        <item itemvalue="JUnit.BaristaTest" />
-        <item itemvalue="JUnit.BaristaTest.testEquals" />
-        <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.BaristaTest.makeCoffee" />
+        <item itemvalue="JUnit.PersonTest.drink" />
+        <item itemvalue="JUnit.GlassTest.totalContent" />
+        <item itemvalue="JUnit.GlassTest.emptyContent" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664421599236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tests: agregar tests para los metodos totalContent y emptyContent">
+      <created>1664426310530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664426310530</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tests: hacer TDD sobre clase Person">
+      <created>1664426352863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664426352863</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,9 +230,12 @@
     <MESSAGE value="feat: Create initial classes" />
     <MESSAGE value="feat: Crear métodos" />
     <MESSAGE value="tests: Crear tests para toString, equals y hashCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests: Crear tests para toString, equals y hashCode" />
+    <MESSAGE value="tests: agregar tests para los metodos totalContent y emptyContent" />
+    <MESSAGE value="tests: hacer TDD sobre clase Person" />
+    <MESSAGE value="tests: hacer TDD sobre clase Barista" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests: hacer TDD sobre clase Barista" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Aux04_Cafecitos$All_in_Aux04_Cafecitos.ic" NAME="All in Aux04-Cafecitos Coverage Results" MODIFIED="1664421480616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Aux04_Cafecitos$All_in_Aux04_Cafecitos.ic" NAME="All in Aux04-Cafecitos Coverage Results" MODIFIED="1664426219009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

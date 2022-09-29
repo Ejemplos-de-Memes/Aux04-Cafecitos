@@ -6,7 +6,7 @@ import ingredients.interfaces.Ingredient;
  * Clase abstracta para representar ingredientes.
  */
 public abstract class AbstractIngredient implements Ingredient {
-  private Integer content;
+  private final Integer content;
   private final String ingredientName;
 
   /**
@@ -28,12 +28,8 @@ public abstract class AbstractIngredient implements Ingredient {
   }
 
   /** Consigue el contenido. */
+  @Override
   public Integer getContent() {
     return content;
-  }
-
-  /** Cambia el contenido del ingrediente. */
-  protected void setContent(Integer content) {
-    this.content = content;
   }
 }

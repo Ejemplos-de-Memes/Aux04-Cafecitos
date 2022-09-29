@@ -32,6 +32,8 @@ public class Barista extends Person {
    * @return Un vaso con café.
    */
   public Glass makeCoffee(List<Ingredient> ingredients) {
-    return null;
+    Glass glassToReturn = new Glass();
+    for (Ingredient ingredient: ingredients) glassToReturn.add(ingredient);
+    return glassToReturn;
   }
 }
