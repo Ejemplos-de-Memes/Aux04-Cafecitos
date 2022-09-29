@@ -3,6 +3,7 @@ package drinks;
 import ingredients.interfaces.Ingredient;
 import java.util.ArrayList;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Representa un vaso con ingredientes.
@@ -15,27 +16,65 @@ public class Glass {
    *
    * @param ingredients Lista de ingredientes.
    */
-  public Glass(ArrayList<Ingredient> ingredients) {
+  protected Glass(ArrayList<Ingredient> ingredients) {
     this.ingredients = ingredients;
+  }
+
+  /** Constructor por default. */
+  public Glass() {
+    this(new ArrayList<>());
   }
 
   /** Consigue la lista de ingredientes */
-  public List<Ingredient> getIngredients() {
+  private List<Ingredient> getIngredients() {
     return ingredients;
   }
 
-  /** Cambia la lista de ingredientes. */
-  protected void setIngredients(ArrayList<Ingredient> ingredients) {
-    this.ingredients = ingredients;
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof Glass glass)) {
+      return false;
+    }
+
+    return getIngredients() != null ? getIngredients().equals(glass.getIngredients())
+        : glass.getIngredients() == null;
   }
 
+  @Override
+  public int hashCode() {
+    return getIngredients() != null ? getIngredients().hashCode() : 0;
+  }
+
+  @Override
+  public String toString() {
+    return "Glass{" +
+        "ingredients=" + ingredients +
+        '}';
+  }
+
+
   /** Retorna la cantidad de contenido en el vaso total en mililitros. */
-  public Integer totalContent() {
-    return 0;
+  public @NotNull Integer totalContent() {
+    Integer suma = 0;
+    for (Ingredient ingredient: ingredients) {
+      suma += ingredient.getContent();
+    }
+    return suma;
   }
 
   /** Vacia el contenido del vaso. */
   public void emptyContent() {
-    // Hacer algo uwu
+    getIngredients().clear();
+  }
+
+  public boolean isEmpty() {
+    return totalContent() == 0;
+  }
+
+  public void add(Ingredient ingredient) {
+    getIngredients().add(ingredient);
   }
 }
