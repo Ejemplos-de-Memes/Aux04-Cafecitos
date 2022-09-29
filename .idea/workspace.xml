@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="tests: hacer TDD sobre clase Barista">
-      <change afterPath="$PROJECT_DIR$/lib/annotations-20.1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aux04-Cafecitos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aux04-Cafecitos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/abstract_classes/AbstractIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/abstract_classes/AbstractIngredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/interfaces/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/interfaces/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/people/Barista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/people/Barista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/people/BaristaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/people/BaristaTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="tests: hacer TDD sobre clase Barista" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664426352863</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tests: hacer TDD sobre clase Barista">
+      <created>1664426425525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664426425525</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
