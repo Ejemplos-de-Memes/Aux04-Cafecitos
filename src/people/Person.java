@@ -1,6 +1,7 @@
 package people;
 
 import drinks.Glass;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Clase para representar a una persona cualquiera.
@@ -58,7 +59,7 @@ public class Person {
         '}';
   }
 
-  public void drink(Glass drinkable) {
-    // No implementada uwu
+  public void drink(@NotNull Glass drinkable) {
+    drinkable.emptyContent();
   }
 }

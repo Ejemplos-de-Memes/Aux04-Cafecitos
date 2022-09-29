@@ -2,6 +2,12 @@ package people;
 
 import static org.junit.Assert.*;
 
+import drinks.Glass;
+import ingredients.Coffee;
+import ingredients.Milk;
+import ingredients.Syrup;
+import ingredients.interfaces.Ingredient;
+import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -47,5 +53,15 @@ public class PersonTest {
   public void testToString() {
     assertEquals("Método toString no funciona en la clase persona.",
         "Person{name='" + persona1.getName() + "'}", persona1.toString());
+  }
+
+  @Test
+  public void drink() {
+    Glass glass = new Glass();
+    glass.add(new Coffee(60));
+    glass.add(new Syrup(10));
+    glass.add(new Milk(170));
+    persona1.drink(glass);
+    assertTrue("El vaso no está vacío.", glass.isEmpty());
   }
 }
