@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="feat: Create initial classes">
+    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="feat: Crear métodos">
+      <change afterPath="$PROJECT_DIR$/tests/people/BaristaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/people/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drinks/Glass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drinks/Glass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/Coffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/Milk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/Milk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/Syrup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/Syrup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/abstract_classes/AbstractIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/abstract_classes/AbstractIngredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ingredients/interfaces/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingredients/interfaces/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/people/Barista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/people/Barista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aux04-Cafecitos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aux04-Cafecitos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/people/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,13 +24,15 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="00-init" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,18 +49,115 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "people.PersonTest",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="people.PersonTest" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="people" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Aux04-Cafecitos">
+    <configuration name="All in Aux04-Cafecitos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aux04-Cafecitos" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaristaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aux04-Cafecitos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.BaristaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaristaTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aux04-Cafecitos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.BaristaTest" />
+      <option name="METHOD_NAME" value="testEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aux04-Cafecitos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aux04-Cafecitos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="people.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.PersonTest" />
+      <option name="METHOD_NAME" value="testEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Aux04-Cafecitos" />
+        <item itemvalue="JUnit.PersonTest.testEquals" />
+        <item itemvalue="JUnit.BaristaTest" />
+        <item itemvalue="JUnit.BaristaTest.testEquals" />
+        <item itemvalue="JUnit.PersonTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664414217014</updated>
       <workItem from="1664414219157" duration="2422000" />
-      <workItem from="1664417512726" duration="890000" />
+      <workItem from="1664417512726" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Create initial classes">
       <created>1664414958998</created>
@@ -82,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664414958999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Crear métodos">
+      <created>1664418516730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664418516730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Create initial classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Create initial classes" />
+    <MESSAGE value="feat: Crear métodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Crear métodos" />
   </component>
 </project>

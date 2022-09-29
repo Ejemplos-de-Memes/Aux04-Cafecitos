@@ -7,7 +7,7 @@ import drinks.Glass;
  */
 public class Person {
   private final String name;
-  private boolean canMakeCoffee;
+  private final boolean canMakeCoffee;
 
   /**
    * Constructor de la clase persona.
