@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
  * Representa un vaso con ingredientes.
  */
 public class Glass {
-  private ArrayList<Ingredient> ingredients;
+  private final ArrayList<Ingredient> ingredients;
 
   /**
    * Constructor del vaso.
