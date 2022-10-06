@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="tests: hacer TDD sobre clase Barista">
+    <list default="true" id="39f52163-e09f-4c82-9218-0a5f8156ff9c" name="Changes" comment="feat: ingredients es ahora privado">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AbstractBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aux04-Cafecitos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aux04-Cafecitos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/drinks/GlassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/drinks/GlassTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
@@ -22,13 +31,14 @@
         <option value="JUnit5 Test Class" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="01-tests-constructor-equals-hash" />
+        <entry key="$PROJECT_DIR$" value="02-tests-metodos" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +71,8 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -74,7 +85,7 @@
       <recent name="people" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Aux04-Cafecitos">
+  <component name="RunManager" selected="JUnit.GlassTest.totalContent">
     <configuration name="All in Aux04-Cafecitos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aux04-Cafecitos" />
       <option name="PACKAGE_NAME" value="" />
@@ -149,10 +160,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GlassTest.totalContent" />
         <item itemvalue="JUnit.All in Aux04-Cafecitos" />
         <item itemvalue="JUnit.BaristaTest.makeCoffee" />
         <item itemvalue="JUnit.PersonTest.drink" />
-        <item itemvalue="JUnit.GlassTest.totalContent" />
         <item itemvalue="JUnit.GlassTest.emptyContent" />
       </list>
     </recent_temporary>
@@ -168,6 +179,8 @@
       <workItem from="1664414219157" duration="2422000" />
       <workItem from="1664417512726" duration="3598000" />
       <workItem from="1665002031271" duration="16000" />
+      <workItem from="1665025696355" duration="4938000" />
+      <workItem from="1665072348506" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Create initial classes">
       <created>1664414958998</created>
@@ -211,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664426425525</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: ingredients es ahora privado">
+      <created>1665025840797</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665025840797</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +255,8 @@
     <MESSAGE value="tests: agregar tests para los metodos totalContent y emptyContent" />
     <MESSAGE value="tests: hacer TDD sobre clase Person" />
     <MESSAGE value="tests: hacer TDD sobre clase Barista" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests: hacer TDD sobre clase Barista" />
+    <MESSAGE value="feat: ingredients es ahora privado" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: ingredients es ahora privado" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Aux04_Cafecitos$All_in_Aux04_Cafecitos.ic" NAME="All in Aux04-Cafecitos Coverage Results" MODIFIED="1664467626405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
